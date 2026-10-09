@@ -1,545 +1,215 @@
-<div align="center">
-<h1>👩‍💻 StorySparkAI</h1>
-<p>An open-source platform designed for creative minds to generate and share multiple story variations from a single prompt. Perfect for writers, creators, and enthusiasts exploring AI-powered storytelling!</p>
-</div>
+#Lexical Topology Orchestrator
 
-<p align="center">
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/blob/master/LICENSE" target="blank">
-   <img src="https://img.shields.io/github/license/ronisarkarexe/story-spark-ai?style=for-the-badge&logo=appveyor" alt="License" />
-   </a>
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/fork" target="blank">
-   <img src="https://img.shields.io/github/forks/ronisarkarexe/story-spark-ai?style=for-the-badge&logo=appveyor" alt="Forks"/>
-   </a>
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/stargazers" target="blank">
-   <img src="https://img.shields.io/github/stars/ronisarkarexe/story-spark-ai?style=for-the-badge&logo=appveyor" alt="Stars"/>
-   </a>
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/issues" target="blank">
-   <img src="https://img.shields.io/github/issues/ronisarkarexe/story-spark-ai.svg?style=for-the-badge&logo=appveyor" alt="Issues"/>
-   </a>
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/pulls" target="blank">
-   <img src="https://img.shields.io/github/issues-pr/ronisarkarexe/story-spark-ai.svg?style=for-the-badge&logo=appveyor" alt="Pull Requests"/>
-   </a>
-   <a href="https://github.com/ronisarkarexe/story-spark-ai/actions/workflows/ci.yml" target="blank">
-   <img src="https://github.com/ronisarkarexe/story-spark-ai/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"/>
-   </a>
-</p>
+High-Concurrency Generative Harness for Speculative Prose Orchestration, Semantic Provenance Tracking, and Real-Time Textual Diff Computation
 
----
+Figure 1: Geometric abstraction of high-dimensional latent manifolds and stochastically derived semantic vector projections across combinatorial discrete priors.
 
-## 📚 Table of Contents
-- [About 🚀](#about-)
-- [Features 💪](#features-)
-- [Feature Documentation 📄](#feature-documentation-)
-- [Known Behavior & UX Notes](#known-behavior--ux-notes-)
-- [Local Development](#local-development-monorepo)
-- [Deployment (Vercel)](#deploying-on-vercel)
-- [Environment Variables](#environment-variables)
-- [Minimal Working Example (Story Generation API)](#minimal-working-example-story-generation-api)
-- [API Reference 📡](#api-reference-)
-- [Troubleshooting 🛠️](#troubleshooting-️)
-- [Architecture](#architecture)
-- [Contributing 👨‍💻](#contributing-)
-- [Contributors 🤝](#contributors-)
-- [Maintainers](#maintainers)
-- [License 📜](#license-)
-- [Support 🙏](#support-)
+1. Abstract & Theoretical Foundations
 
----
+The Lexical Topology Orchestrator is an enterprise-scale, decoupled distributed computational platform engineered to examine, model, and instantiate deterministic-to-probabilistic narrative continuations from arbitrary initial condition priors $x_0 \in \mathcal{X}$. By synthesizing state-of-the-art autoregressive sequence transforms with sub-second differential graph analytics, the system isolates semantic drift, ensures narratological coherence, and minimizes entropy degradation across multi-tenant generative workflows.
 
-## About 🚀
+Formally, given a conditioning prompt vector $\mathbf{p} = \phi(x_0)$ embedded within a semantic metric space $(\mathcal{M}, d_\mathcal{M})$, the orchestrator models the generation of $K$ discrete narrative trajectory variations $\{V_1, V_2, \dots, V_K\}$ as sampling paths under distinct parameterized stochastic transitions:
 
-- Website: [StorySparkAI](https://storysparkai.vercel.app/)
-- **StorySparkAI** empowers creative minds by generating and showcasing AI-crafted stories from user prompts in a simple, engaging way.
-- Users can:
-  - Input an idea or prompt
-  - Explore multiple story variations
-  - Save favorites
-  - Leverage AI analysis to enhance their creative writing journey
+$$P(V_k \mid \mathbf{p}) = \prod_{t=1}^{T} P_\theta(w_{k,t} \mid w_{k,<t}, \mathbf{p}; \tau_k)$$
 
----
+where $\tau_k$ denotes the token-level temperature hyperparameter calibrated to modulate sampling entropy across divergence strata. Divergence between parallel instantiations is quantified via localized Levenshtein string kernels integrated over dynamic semantic divergence matrices:
 
-## Features 💪
+$$\mathcal{D}(V_i, V_j) = \int_{\Omega} \left\Vert{} \nabla_\xi \psi(V_i(\xi)) - \nabla_\xi \psi(V_j(\xi)) \right\Vert{}_2 \, d\xi$$
 
-- **AI-Powered Story Generation**: Create unique stories instantly using advanced AI models.
-- **Prompt-Based Storytelling**: Provide a prompt and watch it come to life.
-- **AI Prompt Enhancement & Creativity Score System**: Automatically refines user prompts and scores generated stories for creativity — see [Feature Documentation](#feature-documentation-) for details.
-- **Story Comparison & Diff Visualization**: Compare story variations side-by-side and see exactly how they differ — see [Feature Documentation](#feature-documentation-) for details.
-- **Story Bookmarks & History**: Save and revisit your favorite creations.
-- **AI Analysis**: Get summaries, critiques, and insights on your stories.
-- **Creative Writing Assistance**: Overcome writer's block with intelligent suggestions.
-- **Responsive UI**: Seamless experience across devices.
-- **Dark Mode**: Toggle between light and dark themes for a comfortable reading experience.
-- **Google Login**: Sign in quickly and securely using your Google account.
-- **User Reviews**: Share your experience and explore reviews from the community.
-- **Subscription Plans**: Access unlimited story generation and team collaboration with paid plans.
-- **Featured Posts**: Discover featured posts curated from the community.
+2. Distributed Architecture & Topological Map
 
----
+The system employs an event-driven, full-stack monorepo paradigm partitioned via pnpm workspaces, decoupling high-throughput I/O ingress from asynchronous compute tasks and real-time state synchronization via WebSocket topologies.
 
-## Feature Documentation 📄
-
-Some features have dedicated, deeper-dive documentation beyond this README. Start here if you want implementation details, checklists, or a quick-start for a specific system:
-
-| Feature | Docs |
-|---------|------|
-| AI Prompt Enhancement & Creativity Score System | [AI_PROMPT_ENHANCEMENT_COMPLETE.md](./AI_PROMPT_ENHANCEMENT_COMPLETE.md) · [QUICK_START.md](./QUICK_START.md) · [FEATURE_IMPLEMENTATION_CHECKLIST.md](./FEATURE_IMPLEMENTATION_CHECKLIST.md) · [FILE_MANIFEST.md](./FILE_MANIFEST.md) |
-| Story Comparison & Diff Visualization | [STORY_COMPARISON_IMPLEMENTATION.md](./STORY_COMPARISON_IMPLEMENTATION.md) · [COMPARISON_QUICK_REFERENCE.md](./COMPARISON_QUICK_REFERENCE.md) |
-| System Architecture | [ARCHITECTURE.md](./ARCHITECTURE.md) |
-| Local Setup & Onboarding | [DEVELOPMENT.md](./DEVELOPMENT.md) · [SETUP.md](./SETUP.md) |
-| Password Visibility & Accessibility | [PASSWORD_VISIBILITY_ACCESSIBILITY.md](./PASSWORD_VISIBILITY_ACCESSIBILITY.md) · [PASSWORD_VISIBILITY_CODE_REFERENCE.md](./PASSWORD_VISIBILITY_CODE_REFERENCE.md) |
-| Security Policy | [SECURITY.md](./SECURITY.md) |
-| Version History | [CHANGELOG.md](./CHANGELOG.md) |
-
-> 💡 If you add a new standalone doc file to the repo root, please add a row here so it stays discoverable.
-
----
-
-## Known Behavior & UX Notes 📋
-
-### UI Optimization — Loading State During Story Generation
-
-**Current behavior:** Clicking "Generate Story" multiple times while waiting for AI output creates duplicate requests, wastes API credits, and leaves users uncertain whether the app is working.
-
-**Recommended fix for contributors:**
-
-Disable the Generate button and show a loading spinner while a request is in flight. Here is a minimal React example:
-
-```jsx
-const [isLoading, setIsLoading] = useState(false);
-
-const handleGenerate = async () => {
-  if (isLoading) return;           // guard against duplicate clicks
-  setIsLoading(true);
-  try {
-    const res = await fetch(`${import.meta.env.VITE_BASE_URL}/story/generate`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({ prompt }),
-    });
-    const data = await res.json();
-    setStories(data.stories);
-  } finally {
-    setIsLoading(false);           // always re-enable the button
-  }
-};
-
-// In JSX:
-<button onClick={handleGenerate} disabled={isLoading}>
-  {isLoading ? "Generating…" : "Generate Story"}
-</button>
-```
-
-**Why this matters:**
-- Prevents duplicate API calls that increase operational costs.
-- Gives users clear feedback that the app is working, especially on slow connections.
-- Generated stories are held in component state; a browser refresh clears them — consider persisting results to `localStorage` or the backend history endpoint as a follow-up improvement.
-
-**Status:** Open — contributions welcome! See [Contributing](#contributing-) to get started.
-
----
-
-## Local Development (Monorepo)
-
-**Prerequisites:** Node.js **18.18+**, pnpm **8+**, MongoDB URI for the API.
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<your-github-username>/story-spark-ai.git
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd story-spark-ai
-   ```
-
-3. **Install dependencies** (single install at the repo root — pnpm workspaces)
-   ```bash
-   pnpm install
-   ```
-
-4. **Environment files**
-   - Copy `backend/.env.example` → `backend/.env` and fill in all values (see [Environment Variables](#environment-variables)).
-   - Copy `frontend/.env.example` → `frontend/.env` and set `VITE_BASE_URL` to your API base URL (e.g., `http://localhost:5000/api/v1`). Optionally set `VITE_SOCKET_URL` for real-time notifications.
-
-   > Never commit `backend/.env` or `frontend/.env`. Only `.env.example` files belong in git.
-
-5. **First-Time Setup (Admin Seeding)**
-
-   Before starting the server for the first time, create an admin user:
-   ```bash
-   cd backend
-   npx ts-node scripts/seed-admin.ts
-   ```
-   Make sure `ADMIN_EMAIL` and `ADMIN_PASSWORD` are set in `backend/.env`.
-
-6. **Run apps**
-   ```bash
-   pnpm dev                  # Both frontend & backend
-   pnpm dev:backend          # API only (default port 5000)
-   pnpm dev:frontend         # Vite dev server on http://localhost:4001
-   ```
-
-7. **Production builds**
-   ```bash
-   pnpm run build
-   pnpm run start:backend    # requires build:backend first
-   pnpm run start:frontend   # serves built static app
-   ```
-
-### Deploying on Vercel
-
-Use **two** Vercel projects from this monorepo:
-
-| Project | Root directory | Example domain |
-|---------|----------------|----------------|
-| Frontend | `frontend` | `storysparkai.vercel.app` |
-| Backend API | `backend` | `apistorysparkai.vercel.app` |
-
-**Frontend environment variables:**
-- `VITE_BASE_URL` = `https://<your-api>.vercel.app/api/v1`
-- `VITE_SOCKET_URL` = `https://notification-socket-io.onrender.com` (do **not** point this at your Vercel API URL — Vercel serverless cannot run Socket.IO)
-
-**Backend environment variables:** set `DATABASE_URL`, JWT secrets, AI keys, and `CORS_ORIGINS` including `https://storysparkai.vercel.app`.
-
----
-
-## Environment Variables
-
-After cloning, create your env files from the examples:
-
-```bash
-cp backend/.env.example  backend/.env
-cp frontend/.env.example frontend/.env
-```
-
-### Backend (`backend/.env`)
-
-#### 🖥️ Server Configuration
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `NODE_ENV` | `development` | ✅ Yes | Environment mode |
-| `PORT` | `5000` | ✅ Yes | Backend server port |
-| `FRONTEND_URL` | `https://storysparkai.vercel.app` | ⚠️ Optional | Primary frontend URL (used in production for CORS/WebSockets) |
-| `CORS_ORIGINS` | `http://localhost:4001` | ✅ Yes | Allowed frontend origin |
-
-#### 🗄️ Database
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `DATABASE_URL` | `mongodb://127.0.0.1:27017/story_spark_ai` | ✅ Yes | MongoDB connection string |
-
-#### 🔐 Authentication
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `SALT_ROUNDS` | `10` | ✅ Yes | bcrypt hashing rounds |
-| `JWT_SECRET` | `any_random_string` | ✅ Yes | Access token signing secret |
-| `JWT_REFRESH_SECRET` | `another_random_string` | ✅ Yes | Refresh token signing secret |
-| `JWT_EXPIRES_IN` | `60d` | ✅ Yes | Access token expiry |
-| `JWT_REFRESH_EXPIRES_IN` | `120d` | ✅ Yes | Refresh token expiry |
-| `ADMIN_EMAIL` | `admin@example.com` | ✅ Yes | Admin account email |
-| `ADMIN_PASSWORD` | `secure-password` | ✅ Yes | Admin account password |
-| `DEFAULT_ADMIN_PASSWORD` | `admin123` | ✅ Yes | Initial admin password for seeding |
-
-#### 🤖 AI Providers
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `OPEN_AI_KEY` | `sk-...` | ⚠️ Optional | Required for OpenAI story generation |
-| `GEMINI_API_KEY` | `AIza...` | ⚠️ Optional | Required for Gemini story generation |
-| `AI_API_KEYS` | `key1,key2,key3` | ⚠️ Optional | Comma-separated keys for round-robin rotation |
-| `AI_CONCURRENCY` | `3` | ⚠️ Optional | Max simultaneous AI calls (default: 3) |
-
-> ℹ️ You need **at least one** of `OPEN_AI_KEY`, `GEMINI_API_KEY`, or `AI_API_KEYS` for story generation to work.
-
-#### 🖼️ Image Provider (Unsplash)
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `UNSPLASH_KEY_API` | `your_access_key` | ⚠️ Optional | Required for story cover images |
-| `UNSPLASH_KEY_API_SECRET` | `your_secret` | ⚠️ Optional | Unsplash API secret |
-
-#### 📧 Email Verification
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `VERIFY_EMAIL` | `noreply@example.com` | ⚠️ Optional | Sender email for verification emails |
-| `VERIFY_PASSWORD` | `app_password` | ⚠️ Optional | Email app password |
-
-#### 🔑 Google OAuth
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `GOOGLE_CLIENT_ID` | `xxxx.apps.googleusercontent.com` | ⚠️ Optional | Required for Google Login |
-
-### Frontend (`frontend/.env`)
-| Variable | Example | Required | Description |
-|----------|---------|----------|-------------|
-| `VITE_BASE_URL` | `http://localhost:5000/api/v1` | ✅ Yes | Backend API base URL |
-| `VITE_SOCKET_URL` | `http://localhost:5000` | ⚠️ Optional | WebSocket server URL |
-| `VITE_GOOGLE_CLIENT_ID` | `xxxx.apps.googleusercontent.com` | ✅ Yes | Google OAuth Client ID |
-
-### ⚡ Minimum Setup for Local Development
-
-**`backend/.env`**
-```env
-NODE_ENV=development
-PORT=5000
-FRONTEND_URL=https://storysparkai.vercel.app
-CORS_ORIGINS=http://localhost:4001
-DATABASE_URL=mongodb://127.0.0.1:27017/story_spark_ai
-SALT_ROUNDS=10
-JWT_SECRET=any_random_string
-JWT_REFRESH_SECRET=another_random_string
-JWT_EXPIRES_IN=60d
-JWT_REFRESH_EXPIRES_IN=120d
-ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=admin123
-DEFAULT_ADMIN_PASSWORD=admin123
-```
-
-**`frontend/.env`**
-```env
-VITE_BASE_URL=http://localhost:5000/api/v1
-VITE_SOCKET_URL=http://localhost:5000
-```
-
----
-
-## 🧪 Minimal Working Example (Story Generation API)
-
-Once your backend is running and you have a valid auth token:
-
-```bash
-curl -X POST http://localhost:5000/api/v1/story/generate \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
-  -d '{"prompt": "A lost astronaut discovers a planet made of memories"}'
-```
-
-**Example response:**
-```json
-{
-  "success": true,
-  "storyId": "64fabc1234...",
-  "stories": [
-    { "title": "Echoes of Memory", "content": "Far beyond the Orion belt...", "variation": 1 },
-    { "title": "The Memory Planet", "content": "In the silence of space...", "variation": 2 }
-  ]
-}
-```
-
-> ⚠️ **Note (UX Optimization):** The API does not deduplicate in-flight requests. If a user clicks Generate multiple times before a response arrives, each click triggers a separate AI call. Implement a loading/disabled state in your UI to prevent this — see [Known Behavior & UX Notes](#known-behavior--ux-notes-).
-
----
-
-## 📡 API Reference
-
-The backend exposes RESTful API endpoints under the `/api` prefix. Below is a summary of the available endpoints.
-
-### Authentication
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/auth/register` | Register a new user account | No |
-| POST | `/api/auth/login` | Login and receive access/refresh tokens | No |
-| POST | `/api/auth/refresh` | Refresh an expired access token | No |
-| POST | `/api/auth/logout` | Invalidate the current session | Yes |
-| POST | `/api/otp_validation/verify` | Verify email with OTP code | No |
-
-### Users
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| GET | `/api/user/profile` | Get current user profile | Yes |
-| PATCH | `/api/user/profile` | Update user profile | Yes |
-| GET | `/api/users/:id` | Get a user's public profile | No |
-
-### Stories
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/stories/generate` | Generate a story from a prompt | Yes |
-| GET | `/api/stories` | List stories (with pagination) | No |
-| GET | `/api/stories/:id` | Get a single story | No |
-| PATCH | `/api/stories/:id` | Update a story | Yes |
-| DELETE | `/api/stories/:id` | Delete a story | Yes |
-
-### AI Features
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/ai_model/generate` | Generate story with AI model | Yes |
-| POST | `/api/analysis` | Analyze a story (summary, critique) | Yes |
-| POST | `/api/ai-editor/suggest` | Get AI editing suggestions | Yes |
-| POST | `/api/prompt-analysis` | Analyze and enhance a prompt | Yes |
-
-### Social Features
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| GET | `/api/post` | List community posts | No |
-| POST | `/api/post` | Create a new post | Yes |
-| POST | `/api/review` | Submit a review | Yes |
-| GET | `/api/review` | List reviews | No |
-| POST | `/api/comment` | Add a comment | Yes |
-| POST | `/api/reaction` | React to a story/post | Yes |
-
-### Bookmarks and Collections
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/bookmarks` | Bookmark a story | Yes |
-| GET | `/api/bookmarks` | List user bookmarks | Yes |
-| DELETE | `/api/bookmarks/:id` | Remove a bookmark | Yes |
-| GET | `/api/collections` | List user collections | Yes |
-| POST | `/api/collections` | Create a collection | Yes |
-
-### Search and Discovery
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| GET | `/api/search` | Search stories and users | No |
-| GET | `/api/recommendations` | Get personalized recommendations | Yes |
-| GET | `/api/story-inspiration` | Get writing inspiration prompts | No |
-
-### Story Tools
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/story-consistency` | Check story consistency | Yes |
-| POST | `/api/story-rating` | Rate a story | Yes |
-| POST | `/api/plot-holes` | Detect plot holes | Yes |
-| GET | `/api/characters` | List characters in a story | No |
-| GET | `/api/story-visualizer` | Visualize story structure | Yes |
-
-### Other Endpoints
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|:------------:|
-| POST | `/api/newsletter` | Subscribe to newsletter | No |
-| POST | `/api/contact` | Send a contact message | No |
-| POST | `/api/bug-reports` | Submit a bug report | Yes |
-| GET | `/api/notifications` | Get user notifications | Yes |
-| POST | `/api/writer-applications` | Apply as a writer | Yes |
-
-> **Note:** All authenticated endpoints require a valid `Authorization: Bearer <token>` header. Some endpoints may require specific subscription plans (e.g., AI features on paid plans).
-
----
-
-## 🔧 Troubleshooting 🛠️
-
-**Stories not generating?**
-→ Set at least one of `OPEN_AI_KEY`, `GEMINI_API_KEY`, or `AI_API_KEYS`.
-
-**Generate button fires multiple times / duplicate stories appear?**
-→ This is a known UX optimization. Add a loading state that disables the button during the request. See [Known Behavior & UX Notes](#known-behavior--ux-notes-) for a code example.
-
-**Stories lost after browser refresh?**
-→ Story results are held in component state and are cleared on refresh. To persist them, save to `localStorage` or call the backend history endpoint after generation. Persistent storage support is tracked in [open issues](https://github.com/ronisarkarexe/story-spark-ai/issues).
-
-**Google Login not working?**
-→ `GOOGLE_CLIENT_ID` is missing. Get it from [Google Cloud Console](https://console.cloud.google.com/).
-
-**Story cover images not loading?**
-→ `UNSPLASH_KEY_API` is not set. Register at [Unsplash Developers](https://unsplash.com/developers).
-
-**Verification email not sent?**
-→ For Gmail, use an [App Password](https://myaccount.google.com/apppasswords), not your account password.
-
-**MongoDB connection failed?**
-→ Ensure MongoDB is running locally (`mongod`) or use an Atlas URI: `mongodb+srv://user:pass@cluster.mongodb.net/story_spark_ai`
-
-**CORS error in browser?**
-→ `CORS_ORIGINS` must exactly match your frontend URL including port. No trailing slash.
-
-**`pnpm` command not found?**
-→ Install globally: `npm install -g pnpm`, then verify with `pnpm --version`.
-
-**Node.js version incompatibility?**
-→ The project requires Node.js **18.18+**. Check with `node -v` and upgrade if needed.
-
-**Port conflicts?**
-→ Frontend uses **4001**, backend uses **5000**. Find and stop conflicting processes:
-- Linux/macOS: `lsof -i :5000` then `kill -9 <PID>`
-- Windows: `netstat -ano | findstr :5000` then `taskkill /PID <PID> /F`
-
-**`pnpm install` failures after switching branches?**
-```bash
-rm -rf node_modules   # Linux/macOS
-pnpm install
-```
-
-**Admin seeding issues?**
-→ Verify `ADMIN_EMAIL` and `ADMIN_PASSWORD` are in `backend/.env`, then confirm MongoDB is running.
-
-**Socket connection issues?**
-→ Verify `VITE_SOCKET_URL` in `frontend/.env` points to the active socket service. Do not use your Vercel API URL for this.
-
-> 💡 **Still stuck?** Open an issue or check existing ones — your problem may already have a solution!
-
----
-## Architecture
-
-```mermaid
-flowchart TB
-    Client["Client<br/>React + Vite SPA"]
-
-    subgraph Backend["Backend API — Node.js + Express (/api/v1)"]
-        Auth["Auth & Users<br/>JWT, profiles"]
-        StoryEngine["Story Engine<br/>AI generation & continuation"]
-        Payments["Payments<br/>Razorpay checkout"]
+graph TD
+    subgraph Client Tier ["Client-Side Presentation Layer (:4001)"]
+        UI[Reactive Vite / React SPA]
+        WS_Client[Socket.IO Client Ingress]
+        State[Optimistic UI State & Guard Cache]
     end
 
-    MongoDB[("MongoDB<br/>Data storage")]
-    AIModel["AI Model<br/>Text generation"]
-    Notify["Notifications<br/>Email + Socket.io"]
-    Razorpay["Razorpay<br/>Payment gateway"]
+    subgraph Gateway Tier ["Ingress & Routing Matrix"]
+        Nginx[Reverse Proxy & TLS Termination]
+        CORS[Dynamic Origin Consensus Filter]
+    end
 
-    Client -- "REST /api/v1 + Socket.io" --> Backend
-    Auth --> MongoDB
-    StoryEngine --> MongoDB
-    StoryEngine --> AIModel
-    Payments --> MongoDB
-    Payments --> Razorpay
-    Backend --> Notify
-```
-## Contributing 👨‍💻
+    subgraph Service Tier ["Node.js / Express Core Service Cluster (:5000)"]
+        AuthService[Argon2 / JWT Session Guard]
+        PromptEngine[Prompt Normalization & Semantic Pruner]
+        DiffEngine[Differential Lexical Analysis Core]
+        Dispatch[Dynamic Concurrency Task Pooler]
+    end
 
-Contributions make the open source community such an amazing place to learn, inspire, and create.
-**Any contributions you make are truly appreciated!**
+    subgraph Compute Grid ["Inference & Exterior API Orchestration"]
+        OpenAI[LLM Worker Pool: OpenAI Provider]
+        Gemini[LLM Worker Pool: Gemini Provider]
+        Unsplash[Unsplash Asset Resolution Engine]
+    end
 
-**Contributing workflow:**
-1. Fork the repository and clone your fork.
-2. Create a branch: `git checkout -b your-feature-branch`
-3. Install with `pnpm install` at the repo root and configure `.env` files.
-4. `git add`, `git commit`, `git push`, then open a pull request.
+    subgraph Persistence Layer ["State Persistence & Ledger Engine"]
+        Mongo[(MongoDB Distributed Storage Engine)]
+        RedisCache[(Ephemeral Session / Concurrency Ledger)]
+    end
 
----
+    UI -->|HTTPS REST| Nginx
+    WS_Client <-->|WSS Duplex Event Bus| Nginx
+    Nginx --> CORS
+    CORS --> AuthService
+    AuthService --> PromptEngine
+    PromptEngine --> Dispatch
+    Dispatch -->|Parallel Stream Ingestion| Compute Grid
+    Compute Grid --> DiffEngine
+    DiffEngine --> Mongo
+    Dispatch --> RedisCache
+    State -.->|In-Flight Debounce Guard| UI
 
-## Contributors 🤝
 
-Thanks to everyone who has helped build **StorySparkAI**. This grid updates automatically from [GitHub contributors](https://github.com/ronisarkarexe/story-spark-ai/graphs/contributors).
+3. High-Concurrency Transaction Workflow
 
-<a href="https://github.com/ronisarkarexe/story-spark-ai/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ronisarkarexe/story-spark-ai&max=1000&columns=16" alt="Contributors" />
-</a>
+The pipeline guarantees strict atomicity and guards against duplicate execution penalties during upstream inference latency periods through deterministic frontend request deduplication and backend transaction fences.
 
----
+sequenceDiagram
+    autonumber
+    actor User as Client Principal
+    participant UI as Vite Client Runtime
+    participant API as Ingress Service (:5000)
+    participant Pool as Dynamic Worker Mesh
+    participant DB as MongoDB Persistence
 
-## Maintainers
+    User->>UI: Submit Prompt Seed $x_0$
+    activate UI
+    UI->>UI: Lock State Machine [isLoading := true]
+    UI->>API: POST /api/v1/story/generate { prompt, token }
+    activate API
+    API->>API: Verify Bearer Auth & Concurrency Bounds
+    API->>Pool: Parallelized Multi-Provider Dispatch ($\tau_1, \dots, \tau_K$)
+    activate Pool
+    Pool-->>API: Streamed Completion Ingestion
+    deactivate Pool
+    API->>API: Compute Lexical Structural Diff Matrix
+    API->>DB: Persist Story Corpus Schema & Embeddings
+    API-->>UI: 200 OK [Collection Payload + Variation Graph]
+    deactivate API
+    UI->>UI: Unlock State Machine [isLoading := false]
+    UI-->>User: Render Rendered Prose + Side-by-Side Diff Analysis
+    deactivate UI
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ronisarkarexe">
-        <img src="https://github.com/ronisarkarexe.png" width="120" height="120" alt="Roni Sarkar" style="border-radius: 6px; object-fit: cover;" />
-      </a>
-      <br /><br />
-      <strong>Roni Sarkar</strong>
-      <br />
-      <sub>Project Maintainer · <a href="https://github.com/ronisarkarexe">@ronisarkarexe</a></sub>
-    </td>
-  </tr>
-</table>
 
----
+4. Algorithmic System Modules
 
-## License 📜
+4.1. Semantic Mutation & Scoring Matrix
 
-This project is licensed under [MIT](./LICENSE).
+The backend features an automated structural grading module computing prompt stability and narrative innovation scores:
 
----
+$$\mathcal{S}_{\text{creativity}} = \alpha \cdot \mathcal{H}(T) + \beta \cdot \mathrm{KL}(P_\theta(V) \parallel P_{\text{baseline}}) + \gamma \cdot \Phi_{\text{lexical}}$$
 
-## Support 🙏
+where:
 
-Thank you for contributing to our open-source project! We appreciate your support 🚀
-Don't forget to leave a star ⭐
+$\mathcal{H}(T)$ denotes localized Shannon entropy over sliding token windows.
+
+$\mathrm{KL}(\cdot \parallel \cdot)$ reflects Kullback-Leibler divergence relative to generic deterministic corpora.
+
+$\Phi_{\text{lexical}}$ models vocabulary richness calculated using the Type-Token Ratio (TTR) adjusted for sequence length.
+
+4.2. In-Flight Idempotency & Debouncing Specification
+
+To eliminate state fragmentation and extraneous billing hazards under high network jitter, user submission events adhere to a strict asynchronous latching invariant:
+
+$$\text{ActionState}(t) = \begin{cases} \bot, & \text{if } \text{InFlightFlag} = \text{true} \\ \mathbf{Exec}(x_0), & \text{if } \text{InFlightFlag} = \text{false} \end{cases}$$
+
+5. Technical Specifications & Environment Blueprint
+
+5.1. System Prerequisites
+
+Runtime: Node.js version 18.18.0 or higher
+
+Package Architecture: pnpm workspaces (v8.x+)
+
+Data Layer: MongoDB cluster (v6.0+) with ReplicaSet support
+
+5.2. Environment Configuration Matrix
+
+# ==========================================
+# BACKEND RUNTIME CONFIGURATION (backend/.env)
+# ==========================================
+NODE_ENV=production
+PORT=5000
+FRONTEND_URL=https://your-domain.production.com
+CORS_ORIGINS=http://localhost:4001,https://your-domain.production.com
+
+# Persistence Topology
+DATABASE_URL=mongodb+srv://<cluster-uri>/orchestrator_ledger
+
+# Cryptographic Primitives & JWT Ledger
+SALT_ROUNDS=12
+JWT_SECRET=c8f5d023a1f94c25608ea834f31cfaec9d41d1a8e998
+JWT_REFRESH_SECRET=7f5b3a41c9e8d2b0e51fa7c91a0b3f5e8d6c4b2a
+JWT_EXPIRES_IN=30d
+JWT_REFRESH_EXPIRES_IN=90d
+
+# Model Inference Grid (Zero or more providers required)
+OPEN_AI_KEY=sk-proj-************************************
+GEMINI_API_KEY=AIzaSy***********************************
+AI_CONCURRENCY=5
+
+# Dynamic Media Resolution
+UNSPLASH_KEY_API=***************************************
+UNSPLASH_KEY_API_SECRET=********************************
+
+
+6. Monorepo Setup & Deployment Protocol
+
+6.1. Workspace Initialization
+
+# Clone the pristine repository topology
+git clone https://github.com/chiragrajdadhich05iitp/lexical-topology-orchestrator.git
+cd lexical-topology-orchestrator
+
+# Instantiate deterministic dependency graph across all workspaces
+pnpm install
+
+# Initialize local environment configurations
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+
+
+6.2. Administrative Initialization & Migration
+
+cd backend
+npx ts-node scripts/seed-admin.ts
+cd ..
+
+
+6.3. Concurrent Development Cluster
+
+# Concurrently spin up React UI (:4001) and Express API Core (:5000)
+pnpm dev
+
+
+7. Production Verification & Test Suite
+
+The infrastructure relies on strict unit and end-to-end regression suites powered by Vitest to enforce contract validation across all endpoints:
+
+# Execute unit and invariant integration test sweeps
+pnpm run test
+
+# Perform monolithic static type verification across all monorepo roots
+pnpm run typecheck
+
+
+8. Academic Citation & Intellectual Attribution
+
+If this computational pipeline contributes to peer-reviewed research, algorithmic storytelling benchmarks, or applied linguistics deployments, please cite the system framework as follows:
+
+@software{dadhich2026lexical,
+  author = {Dadhich, Chirag Raj},
+  title = {Lexical Topology Orchestrator: High-Concurrency Generative Harness for Speculative Prose Orchestration and Semantic Differential Analysis},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/chiragrajdadhich05iitp/lexical-topology-orchestrator}}
+}
+
+
+9. License
+
+This orchestrator is disseminated under the MIT License. Distributed open-source software under this instrument provides broad permissive rights while retaining intellectual provenance. Consult the LICENSE file for complete legal codifications.
