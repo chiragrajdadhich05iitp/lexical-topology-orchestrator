@@ -1,4 +1,4 @@
-Lexical Topology Orchestrator (LTO)
+# Lexical Topology Orchestrator (LTO)
 
 High-Concurrency Generative Harness for Non-Deterministic Latent Trajectory Synthesis, Stochastic Discourse Branching, and Dynamic Differential Manifold Analysis
 
@@ -252,10 +252,6 @@ export function computeTopologicalDiff(seqA: string[], seqB: string[]): EditOper
 7. Deterministic Deployment Protocol
 
 7.1. Workspace Provisioning
-
-# Clone the pristine repository topology
-git clone https://github.com/chiragrajdadhich05iitp/lexical-topology-orchestrator.git
-cd lexical-topology-orchestrator
 
 # Provision strict hermetic dependency graph
 pnpm install --frozen-lockfile
