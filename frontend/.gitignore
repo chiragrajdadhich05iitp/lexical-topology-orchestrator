@@ -1,0 +1,12 @@
+# Covered by root .gitignore; kept for standalone tooling / clones of frontend only
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.*
+!.env.example
+stories_base.tsx
+stories_clean.tsx
+stories_feature.tsx
+stories_new.tsx
+stories_old.tsx
