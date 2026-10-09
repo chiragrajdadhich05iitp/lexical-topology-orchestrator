@@ -1,4 +1,4 @@
-Contributor & Engineering Operations Protocol
+# Contributor & Engineering Operations Protocol
 
 Guidelines for Maintaining Invariant Guarantees, Deterministic Testing, and Monorepo Hygiene
 
@@ -47,10 +47,6 @@ Step 1: Hermetic Environment Preparation
 node -v # Must be >= 18.18.0
 pnpm -v # Must be >= 8.10.0
 
-# Clone cleanly
-git clone https://github.com/chiragrajdadhich05iitp/lexical-topology-orchestrator.git
-cd lexical-topology-orchestrator
-pnpm install
 
 
 Step 2: Static Analysis Pipeline
