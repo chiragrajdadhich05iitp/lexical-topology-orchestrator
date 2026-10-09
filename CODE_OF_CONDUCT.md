@@ -2,127 +2,82 @@
 
 ## Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+We as members, contributors, and maintainers pledge to make participation in the
+**Lexical Topology Orchestrator** research and development community a harassment-free 
+experience for everyone, regardless of age, body size, visible or invisible disability, 
+ethnicity, sex characteristics, gender identity and expression, level of experience, 
+education, socio-economic status, nationality, personal appearance, race, caste, 
+religion, or sexual identity and orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, 
+inclusive, intellectually rigorous, and healthy scientific engineering community.
 
 ## Our Standards
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Examples of behavior that contributes to a positive environment for our community include:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+- Demonstrating empathy, professional integrity, and kindness toward peers
+- Being respectful of differing technical opinions, architectural paradigms, and research viewpoints
+- Giving and gracefully accepting constructive peer-review feedback
+- Accepting responsibility and apologizing to those affected by our oversights, and iteratively improving
+- Prioritizing systemic stability, scientific reproducibility, and collective progress over personal priorities
 
 Examples of unacceptable behavior include:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- The use of sexualized language or imagery, and unwelcome sexual attention or advances of any nature
+- Trolling, insulting or derogatory technical critiques, and ad-hominem or political attacks
+- Public or private harassment in any communications layer
+- Publishing others' confidential information, such as physical or contact coordinates, without verifiable authorization
+- Malicious tampering, intentional poisoning of algorithmic benchmarks, or conduct deemed adversarial in a professional research environment
 
 ## Enforcement Responsibilities
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+Project maintainers are responsible for clarifying and enforcing our standards of acceptable 
+conduct and will execute prompt, impartial, and proportionate corrective action against any 
+behavior deemed disruptive, hostile, or detrimental to the research ecosystem.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Maintainers retain the authority to redact, edit, or reject comments, commits, pull requests, 
+documentation updates, issues, and other submissions that violate this Code of Conduct, with 
+transparent justification provided where appropriate.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+This Code of Conduct governs all official project namespaces, repository threads, issue trackers, 
+discussion boards, and external representational vectors (such as symposiums, project email domains, 
+and associated developer communications).
 
-## Enforcement
+## Enforcement & Reporting
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-ronichandrasarkar@gmail.com
-All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise non-compliant behavior should be directly 
+reported to the project administration via:
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+- **Security & Conduct Desk:** `chiragrajdadhich05iitp@gmail.com`
+- **GitHub Incident Intake:** Submit a confidential advisory via repository issue escalation labeled `kind/conduct`.
+
+All reports will undergo confidential, prompt, and objective investigation. The administration 
+is strictly bound to maintain informant confidentiality and data integrity throughout the audit lifecycle.
 
 ## Enforcement Guidelines
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+Project maintainers will adhere to the following Community Impact Protocol when evaluating infractions:
 
 ### 1. Correction
+- **Community Impact:** Isolated use of unprofessional dialect or counterproductive discourse.
+- **Consequence:** A formal written notice clarifying the boundary transgression and outlining corrective behavioral adjustments.
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+### 2. Formal Reprimand
+- **Community Impact:** Repeated single-incident infractions or persistent non-cooperative conduct during technical reviews.
+- **Consequence:** A formal warning restricting direct interactions with impacted contributors across all active communication channels for a specified observation period.
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+### 3. Temporary Suspension
+- **Community Impact:** Critical disruption of collaborative integrity, persistent hostility, or gross professional misconduct.
+- **Consequence:** Immediate revocation of write/triage access and an enforceable ban from community repositories and discussion forums for a defined duration.
 
-### 2. Warning
-
-**Community Impact**: A violation through a single incident or series
-of actions.
-
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
-
-### 3. Temporary Ban
-
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
-
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+### 4. Permanent Revocation
+- **Community Impact:** Systemic, predatory, or malicious attacks against community members, intellectual sabotage, or repeated defiance of prior disciplinary measures.
+- **Consequence:** Permanent expulsion, blocking of platform credentials, and indefinite revocation of all contributor privileges across the organization.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 1.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), 
+version 2.1, with procedural escalation mechanisms aligned with institutional research governance standards.
