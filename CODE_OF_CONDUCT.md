@@ -76,8 +76,3 @@ Project maintainers will adhere to the following Community Impact Protocol when 
 ### 4. Permanent Revocation
 - **Community Impact:** Systemic, predatory, or malicious attacks against community members, intellectual sabotage, or repeated defiance of prior disciplinary measures.
 - **Consequence:** Permanent expulsion, blocking of platform credentials, and indefinite revocation of all contributor privileges across the organization.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), 
-version 2.1, with procedural escalation mechanisms aligned with institutional research governance standards.
